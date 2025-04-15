@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: azure;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto 400px 30%;
+
+}
+.box {
+    background-color: brown;
+    margin: 10px;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}

@@ -1,0 +1,119 @@
+/* barra de navegación */
+.navbar{
+    padding: 2rem;
+    background-color: #f5f6f7;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.navbar-nav{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+/* sección principal */
+.hero{
+background-color: #f5f6f7;
+min-height: 450px;
+text-align: center;
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+.hero-imagen-desarrollo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+/* General */
+
+h1{
+    font-size: 2.5rem;
+    font-family: "Aladin", system-ui;
+}
+.contenedor1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: white;
+    margin: 10px;
+    border: 8px solid white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,01);
+}   
+
+.body-perfil{
+    background-color: rgb(210, 215, 215);
+}
+.head-perfil{
+    background-color: rgb(32, 120, 170);
+    border-end-end-radius: 100%;
+}
+
+.titulo1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
+
+.titulo2{
+    text-align: center;
+    color: white;
+}
+
+.img-cont{
+    justify-content: center;
+    display: flex;
+    
+    
+}
+
+.imagen1{
+    width: 250px;
+    border-radius: 50%;
+    border: 8px solid white;
+    margin: auto;
+    display: block;
+}
+
+.subTitle-h2{
+    color: rgb(32, 120, 170);
+}
+
+.icon-descripcion{
+    color: rgb(32, 120, 170);
+}
+
+.icon-descripcion span {
+    color: black;
+}
+
+.listas{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; 
+    margin-top: 50px; 
+}
+
+.center{
+    text-align: center;
+    margin-top: 50px;
+}

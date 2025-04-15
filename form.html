@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract URL Params</title>
+</head>
+<body>
+    <h3>Parámetros de la URL a JSON</h3>
+    <p>Use of a JS function to get the URL params:</p>
+
+    <h4>Plain URL:</h4>
+    <p id="urlOutput"></p>
+
+    <h4>JSON output:</h4>
+    <p id="jsonOutput"></p>
+
+    <h4>List of params:</h4>
+    <ul id="listOutput"></ul>
+
+    <script>
+        function getURLParamsAsObj () {
+            const url = window.location.href;
+            const urlObj = new URL(url);
+            const params = urlObj.searchParams;
+            const paramsObj = {};
+    
+            params.forEach((value, key) => {
+                paramsObj[key] = value;
+            });
+    
+            return paramsObj;
+        }
+        const params = getURLParamsAsObj();
+    
+        function displayURL() {
+            const urlOutput = document.getElementById('urlOutput');
+            urlOutput.textContent = window.location.href;
+        }
+
+        function displayJSON() {
+            const jsonOutput = document.getElementById('jsonOutput');
+            const jsonString = JSON.stringify(params, null, 2);
+            jsonOutput.textContent = jsonString;
+    }
+    
+        window.addEventListener('load', displayURL);
+        window.addEventListener('load', displayJSON);
+    
+    </script>
+
+
+</body>
+</html>
